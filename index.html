@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「國立科技高中─校園社團介紹網」</title>
+    <style>
+        /* 主要main */
+        #main {
+            width: 1024px;
+            height: 768px;
+            margin: auto;
+            /* background: lightblue; */
+        }
+
+        /* 國立科技高中-校園社團介紹網 */
+        #top {
+            width: 1000px;
+            height: 65px;
+            margin: auto;
+            /* background: lightgoldenrodyellow; */
+        }
+
+        /* 左邊選單 */
+        #left {
+            width: 215px;
+            height: 683px;
+            /*  */
+            float: left;
+            margin-left: 12px;
+            /* background: lightpink; */
+        }
+
+        /* 右邊內容 */
+        #right {
+            width: 770px;
+            height: 683px;
+            /*  */
+            float: right;
+            margin-right: 12px;
+            /* background: lightseagreen; */
+        }
+
+        /* 跑馬燈: 注意市標籤不是 id */
+        marquee {
+            width: 770px;
+            height: 29px;
+            font-family: "標楷體";
+            font-size: 24px;
+            color: #0000FF;
+        }
+
+        /* 右邊資訊欄 */
+        iframe {
+            width: 770px;
+            height: 654px;
+        }
+
+        #footer {
+            width: 1000px;
+            height: 20px;
+            margin: auto;
+            /* background: lightslategray; */
+            /*  */
+            clear: both;
+            font-family: "標楷體";
+            font-size: 16px;
+            color: #000;
+            text-align: center;
+            /* text-align: center; */
+        }
+
+        #menu {
+            /* h: 683-25 */
+            width: 215px;
+            height: 658px;
+            /* background: lightsalmon; */
+        }
+
+        #menu div {
+            font-family: "標楷體";
+            font-size: 24px;
+            font-weight: 500;
+            text-decoration: underline;
+            text-align: center;
+            color: #FF00FF;
+        }
+
+        #menu table {
+            /* table 沒有寬度的話就沒辦法 text-align:center */
+            width: 200px;
+        }
+
+        #menu table td {
+            font-family: "標楷體";
+            font-size: 16px;
+            color: #000000;
+            text-align: center;
+            background: lightgoldenrodyellow;
+            /* 40px 比較美觀 (原圖35px) */
+            height: 40px;
+            background: url(./images/menu1.png)no-repeat;
+        }
+
+        #menu table td:hover {
+            background: url(./images/menu2.png)no-repeat;
+        }
+
+        #update {
+            width: 215px;
+            height: 25px;
+            /* background: lightgreen; */
+            font-family: "標楷體";
+            font-size: 16px;
+            text-align: center;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <!-- 補 alt、title -->
+        <div id="top"><a href="./index.html"><img src="./合成圖片logo.png" alt="國立科技高中團介紹網" title="國立科技高中團介紹網"></div>
+
+        <div id="left">
+            <div id="menu">
+                <div>社團介紹</div>
+                <br>
+                <!-- table>tr*6>td 六列一欄 -->
+                <table>
+                    <tr>
+                        <!--  -->
+                        <td><a href="./guitar_history.html" target="iframe">吉他社</a></td>
+                    </tr>
+                    <tr>
+                        <td>熱舞社</td>
+                    </tr>
+                    <tr>
+                        <td>棒球社</td>
+                    </tr>
+                    <tr>
+                        <td>羽球社</td>
+                    </tr>
+                    <tr>
+                        <td>足球社</td>
+                    </tr>
+                    <tr>
+                        <td>童軍社</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="update">最近更新日期：2024/04/02</div>
+        </div>
+
+        <div id="right">
+            <marquee>歡迎光臨校園社團介紹網，參觀後請支持社團活 動並熱烈參與</marquee>
+            <!-- name -->
+            <iframe src="./main.html" frameborder="0" name="iframe"></iframe>
+        </div>
+
+        <div id="footer">網頁設計及維護：XX官念孜</div>
+    </div>
+
+</body>
+
+</html>
